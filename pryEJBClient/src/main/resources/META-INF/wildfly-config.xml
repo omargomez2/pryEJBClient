@@ -4,7 +4,8 @@
                     <rule use-configuration="default" />
         </authentication-rules>
         <authentication-configurations>
-            <configuration name="default">
+           <!-- 
+           <configuration name="default">
                 <sasl-mechanism-selector selector="#ALL" />
                 <set-mechanism-properties>
                     <property key="wildfly.sasl.local-user.quiet-auth" value="true" />
@@ -13,6 +14,14 @@
                     <use-service-loader/>
                 </providers>
              </configuration>
+             -->
+             <configuration name="default">
+                <sasl-mechanism-selector selector="DIGEST-MD5"/>
+                <set-user-name name="ejbuser"/>
+                <credentials>
+                    <clear-password password="test@123"/>
+                </credentials>
+            </configuration>
         </authentication-configurations>
     </authentication-client>
 </configuration>
