@@ -1,4 +1,4 @@
-package net.osgg.pryEJBClient;
+package net.osgg;
 
 import java.util.Hashtable;
 

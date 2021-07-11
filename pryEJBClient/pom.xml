@@ -33,14 +33,16 @@
    </dependencyManagement>
 
   <dependencies>
+  	<!-- In case you want to use the remote interface from another project -->
+	<!--
 	<dependency>
  		<groupId>net.osgg</groupId>
  		<artifactId>pryEJBConv</artifactId>
 		<type>ejb-client</type>
 		<version>${project.version}</version>
 	</dependency> 
-  
-        <!-- Include the ejb client jars -->
+  	-->
+    <!-- Include the ejb client jars -->
 	<dependency>
 		<groupId>org.wildfly</groupId>
    		<artifactId>wildfly-ejb-client-bom</artifactId>
