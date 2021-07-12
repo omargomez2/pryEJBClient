@@ -12,8 +12,9 @@ import net.osgg.ConverterBeanRemote;
 public class App {
     public static void main( String[] args ) throws Exception {
     	ConverterBeanRemote converter = lookupHelloEJB();
+    	int grados = 10;
 		System.out.println("Dame un saludo: " + converter.saludar());
-		System.out.println("Convierte 20 grados C a F: " + converter.convertToFahrenheit(25));
+		System.out.println("Convierte "+grados+" grados C: "+converter.convertToFahrenheit(grados)+"F");
     }
     
     
