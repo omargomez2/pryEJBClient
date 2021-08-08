@@ -19,7 +19,7 @@
                 <sasl-mechanism-selector selector="DIGEST-MD5"/>
                 <set-user-name name="ejbuser"/>
                 <credentials>
-                    <clear-password password="test@123"/>
+                    <clear-password password="ejbuser"/>
                 </credentials>
             </configuration>
         </authentication-configurations>
